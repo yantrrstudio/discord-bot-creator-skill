@@ -1,0 +1,117 @@
+{
+  "name": "discord-bot-creator",
+  "version": "1.3.0",
+  "description": "Production-grade, auditable multi-agent Discord bot creator skill with native/fallback orchestration, requirements locking, workflow auditing, branding and asset gates, Emoji.gg sourcing, embed validation, coding, testing, review, and clean delivery.",
+  "entrypoint": "SKILL.md",
+  "agent_directory": "agents/",
+  "agents": [
+    {
+      "id": "api_integration",
+      "file": "agents/API_INTEGRATION.md"
+    },
+    {
+      "id": "asset",
+      "file": "agents/ASSET.md"
+    },
+    {
+      "id": "branding",
+      "file": "agents/BRANDING.md"
+    },
+    {
+      "id": "build_test",
+      "file": "agents/BUILD_TEST.md"
+    },
+    {
+      "id": "code_review",
+      "file": "agents/CODE_REVIEW.md"
+    },
+    {
+      "id": "coding",
+      "file": "agents/CODING.md"
+    },
+    {
+      "id": "embed_builder",
+      "file": "agents/EMBED_BUILDER.md"
+    },
+    {
+      "id": "embed_research",
+      "file": "agents/EMBED_RESEARCH.md"
+    },
+    {
+      "id": "emoji",
+      "file": "agents/EMOJI.md"
+    },
+    {
+      "id": "file_management",
+      "file": "agents/FILE_MANAGEMENT.md"
+    },
+    {
+      "id": "final_validation",
+      "file": "agents/FINAL_VALIDATION.md"
+    },
+    {
+      "id": "gif",
+      "file": "agents/GIF.md"
+    },
+    {
+      "id": "orchestrator",
+      "file": "agents/ORCHESTRATOR.md"
+    },
+    {
+      "id": "prompt_gap",
+      "file": "agents/PROMPT_GAP.md"
+    },
+    {
+      "id": "workflow",
+      "file": "agents/WORKFLOW.md"
+    },
+    {
+      "id": "workflow_audit",
+      "file": "agents/WORKFLOW_AUDIT.md"
+    },
+    {
+      "id": "emoji_approval",
+      "file": "agents/EMOJI_APPROVAL.md"
+    }
+  ],
+  "runtime": "runtime/",
+  "references": [
+    "references/agent-runtime.md",
+    "references/emoji-gg.md",
+    "references/architecture.md",
+    "references/providers.md",
+    "references/agent-output-contracts.md",
+    "references/package-hygiene.md"
+  ],
+  "templates": [
+    "templates/.env.example",
+    "templates/.gitignore",
+    "templates/README.md",
+    "templates/docs/EMOJI_SOURCES.md"
+  ],
+  "runtime_files": [
+    "runtime/agent_dispatch.py",
+    "runtime/api_integration_agent.py",
+    "runtime/artifact_store.py",
+    "runtime/asset_agents.py",
+    "runtime/branding_agent.py",
+    "runtime/build_test_agent.py",
+    "runtime/code_review_agent.py",
+    "runtime/coding_agent.py",
+    "runtime/contracts.py",
+    "runtime/embed_agents.py",
+    "runtime/emoji_gg_client.py",
+    "runtime/file_management_agent.py",
+    "runtime/final_validation_agent.py",
+    "runtime/giphy_client.py",
+    "runtime/orchestrator.py",
+    "runtime/project_spec.py",
+    "runtime/requirements_agent.py",
+    "runtime/smoke_test.py",
+    "runtime/validate_project.py",
+    "runtime/workflow_agent.py"
+  ],
+  "author": "@yantrrstudio",
+  "license": "MIT",
+  "credits": "@yantrrstudio"
+}
